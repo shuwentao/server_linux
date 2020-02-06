@@ -1,0 +1,2 @@
+安装vnc
+yum install tigervnc-server 

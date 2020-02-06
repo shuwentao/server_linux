@@ -1,0 +1,9 @@
+rpm -q vsftpd
+安装 vsftpd
+yum -y install vsftpd
+开启 vsftpd 服务
+systemctl start vsftpd.service
+查看vsftpd的状态
+netstat -npal | grep vsftpd
+查看vsftpd配置文件
+vim vsftpd.conf 
