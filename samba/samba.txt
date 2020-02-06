@@ -1,0 +1,25 @@
+查看samba版本
+rpm -q samba 
+samba-4.9.1-10.el7_7.x86_64
+
+安装samba
+yum -y install samba samba- client samba- common
+
+修改samba配置文件
+vim /etc/samba/smb.conf
+
+测试smmba配置文件是否有问题
+testparm /etc/samba/smb.conf
+
+启动samba
+systemctl start smb.service
+
+重新启动
+systemctl restart smb.service
+
+查看samba进程
+ps -ef | grep smb
+
+将samba设置为开机启动
+chkconfig smb on
+
