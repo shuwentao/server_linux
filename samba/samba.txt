@@ -11,6 +11,8 @@ vim /etc/samba/smb.conf
 测试smmba配置文件是否有问题
 testparm /etc/samba/smb.conf
 
+修改共享目录的权限 chown -R nobody:nobody /ixbda/
+
 启动samba
 systemctl start smb.service
 
